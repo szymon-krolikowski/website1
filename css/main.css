@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap");
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.navigationMobile__element {
+  font-size: 2rem;
+}
+
+.navigationMobile {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+.navigationMobile__list {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 0px 50px;
+}
+
+.navigationMobile__element {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.navigationMobile__element::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 30px;
+  height: 1px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #000;
+}
+
+.navigationMobile__element:nth-child(6) {
+  display: block;
+  width: 80%;
+  text-align: center;
+  border: 1px solid #000;
+  padding: 10px 0px;
+}
+
+.navigationMobile__element:nth-child(6)::after {
+  width: 0px;
+}
+
+.navigationMobile__element:nth-child(7) {
+  display: block;
+  width: 80%;
+  text-align: center;
+  border: 1px solid #000;
+  padding: 10px 0px;
+}
+
+.navigationMobile__element:nth-child(7)::after {
+  width: 0px;
+}
+
+.stickyTopNavigation {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.stickyTopNavigation__button {
+  width: 50px;
+  height: 100%;
+  position: relative;
+  margin-top: 15px;
+}
+
+.stickyTopNavigation__topLine {
+  width: 60%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 5%;
+}
+
+.stickyTopNavigation__midLine {
+  width: 60%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 22.5%;
+}
+
+.stickyTopNavigation__bottomLine {
+  width: 60%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 40%;
+}
+/*# sourceMappingURL=main.css.map */

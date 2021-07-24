@@ -1,0 +1,101 @@
+@import "./topography";
+
+.navigationMobile {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+
+    &__list {
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        padding: 100px 0px 50px;
+    }
+
+    &__element {
+        position: relative;
+        padding-bottom: 10px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 30px;
+            height: 1px;
+            transform: translateX(-50%);
+            background-color: $black;
+        }
+
+        &:nth-child(6) {
+            display: block;
+            width: 80%;
+            text-align: center;
+            border: 1px solid $black;
+            padding: 10px 0px;
+
+            &::after {
+                width: 0px;
+            }
+        }
+
+        &:nth-child(7) {
+            display: block;
+            width: 80%;
+            text-align: center;
+            border: 1px solid $black;
+            padding: 10px 0px;
+
+            &::after {
+                width: 0px;
+            }
+        }
+    }
+
+}
+
+.stickyTopNavigation {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+
+    &__button{
+        width: 50px;
+        height: 100%;
+        position: relative;
+        margin-top: 15px;
+    }
+
+    &__topLine {
+        width: 60%;
+        height: 2px;
+        background: $black;
+        position: absolute;
+        top: 5%;
+    }
+
+    &__midLine {
+        width: 60%;
+        height: 2px;
+        background: $black;
+        position: absolute;
+        top: 22.5%;
+    }
+
+    &__bottomLine {
+        width: 60%;
+        height: 2px;
+        background: $black;
+        position: absolute;
+        top: 40%;
+    }
+}
+
+@import "./medium";
+@import "./large";
